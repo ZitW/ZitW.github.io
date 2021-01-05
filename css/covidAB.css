@@ -1,0 +1,129 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+height: 100%;
+color: #777;
+line-height: 1.8;
+text-align:center;
+}
+
+
+.center {
+			 width: 400px;
+			 height: 10px;
+			 /* width: 80%;
+			 height: 10%; */
+			 margin-left:auto;
+			 margin-right:auto;
+}
+
+.mapid {
+         width: 60%;
+         height: 400px;
+         /* width: 80%;
+         height: 60%; */
+         margin-top:auto;
+         margin-left:auto;
+         margin-right:auto;
+         border-style: solid;
+       	border-width: medium;}
+/* Legend specific  */
+.legend {
+padding: 6px 8px;
+font: 14px Arial, Helvetica, sans-serif;
+background: white;
+background: rgba(255, 255, 255, 0.8);
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+border-radius: 5px;
+line-height: 24px;
+color: #555;
+}
+.legend h4 {
+text-align: center;
+font-size: 16px;
+margin: 2px 12px 8px;
+color: #777;
+}
+
+.legend span {
+position: relative;
+bottom: 3px;
+}
+
+.legend i {
+width: 18px;
+height: 18px;
+float: left;
+margin: 0 8px 0 0;
+opacity: 0.7;
+}
+
+.legend i.icon {
+background-size: 18px;
+background-color: rgba(255, 255, 255, 1);
+}
+
+
+.info {
+padding: 6px 8px;
+font: 14px Arial, Helvetica, sans-serif;
+background: white;
+background: rgba(255, 255, 255, 0.8);
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+border-radius: 5px;
+line-height: 24px;
+color: #555;
+}
+
+#findbox {
+background: #eee;
+border-radius:.125em;
+border:2px solid #1978cf;
+box-shadow: 0 0 80px #999;
+margin-left:auto;
+margin-right:auto;
+padding: 2px 0;
+width: 200px;
+height: 26px;
+}
+.search-tooltip {
+width: 200px;
+}
+.leaflet-control-search .search-cancel {
+position: static;
+float: left;
+margin-left: -122px;
+}
+.leaflet-control-search .search-button {
+display:block;
+float:left;
+width:30px;
+height:30px;
+background: url('/search-icon.jpg') no-repeat 4px 4px #fff;
+border-radius:4px;
+}
+#post-it {
+	width:9em;
+	height:9em;
+	margin-right: -122px;
+	padding: 6px 8px;
+	float:left;
+	background:#fbf5bf;
+	border:1px solid #c6bb58;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	color:#666;
+	border-radius: 5px;
+	line-height: 24px;
+	/* font: 14px Arial, Helvetica, sans-serif; */
+}
+table {
+    width: 50%;
+}
+th {
+    background: #f1f1f1;
+    font-weight: bold;
+    padding: 6px;
+}
+td {
+    background: #f9f9f9;
+    padding: 6px;
+}
