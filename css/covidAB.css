@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
 height: 100%;
@@ -74,10 +76,13 @@ line-height: 24px;
 color: #555;
 }
 
-#findbox {
-background: #eee;
+/* #findbox {*/
+/* background: #eee; */
+/* border:2px solid #1978cf; */
+
+/*
 border-radius:.125em;
-border:2px solid #1978cf;
+
 box-shadow: 0 0 80px #999;
 margin-left:auto;
 margin-right:auto;
@@ -101,6 +106,8 @@ height:30px;
 background: url('/search-icon.jpg') no-repeat 4px 4px #fff;
 border-radius:4px;
 }
+*/
+/*
 #post-it {
 	width:9em;
 	height:9em;
@@ -112,9 +119,11 @@ border-radius:4px;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 	color:#666;
 	border-radius: 5px;
-	line-height: 24px;
+	line-height: 24px;*/
 	/* font: 14px Arial, Helvetica, sans-serif; */
+	/*
 }
+
 table {
     width: 50%;
 }
@@ -126,4 +135,4 @@ th {
 td {
     background: #f9f9f9;
     padding: 6px;
-}
+} */
