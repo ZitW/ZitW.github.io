@@ -106,14 +106,23 @@ function resetHighlight(e) {
   }
 
 function getColor(d) {
-  return d > 5000 ? '#272727' :
-         d > 2000  ? '#747474' :
-         d > 1000  ? '#59253A' :
-         d > 500  ? '#c8c3cc' :
-         d > 200  ? '#895061' :
-         d > 100   ? '#FD8D3C' :
-         d > 50   ? '#FEB24C' :
-         d > 20   ? '#14A76C' :
+  // return d > 5000 ? '#272727' :
+  //        d > 2000  ? '#747474' :
+  //        d > 1000  ? '#59253A' :
+  //        d > 500  ? '#c8c3cc' :
+  //        d > 200  ? '#895061' :
+  //        d > 100   ? '#FD8D3C' :
+  //        d > 50   ? '#FEB24C' :
+  //        d > 20   ? '#14A76C' :
+  //                   '#FFEDA0';
+  return d > 10000 ? '#272727' :
+         d > 8000  ? '#747474' :
+         d > 5000 ? '#59253A' :
+         d > 2000  ? '#c8c3cc' :
+         d > 1000  ? '#895061' :
+         d > 500   ? '#FD8D3C' :
+         d > 200   ? '#FEB24C' :
+         d > 50  ? '#14A76C' :
                     '#FFEDA0';
 }
 
@@ -135,7 +144,7 @@ var legend = L.control({position: 'bottomleft'});
 legend.onAdd = function (map) {
 
   var div = L.DomUtil.create('div', 'info legend'),
-    grades = [0, 20, 50, 100, 200, 500, 1000,2000,5000],
+    grades = [0, 50, 200, 500, 1000, 2000, 5000,8000,10000],
     labels = [],
     from, to;
 
