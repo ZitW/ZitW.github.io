@@ -115,14 +115,14 @@ function getColor(d) {
   //        d > 50   ? '#FEB24C' :
   //        d > 20   ? '#14A76C' :
   //                   '#FFEDA0';
-  return d > 10000 ? '#272727' :
-         d > 8000  ? '#747474' :
-         d > 5000 ? '#59253A' :
-         d > 2000  ? '#c8c3cc' :
-         d > 1000  ? '#895061' :
-         d > 500   ? '#FD8D3C' :
-         d > 200   ? '#FEB24C' :
-         d > 50  ? '#14A76C' :
+  return d > 18000 ? '#272727' :
+         d > 15000  ? '#747474' :
+         d > 9000 ? '#59253A' :
+         d > 5000  ? '#c8c3cc' :
+         d > 3000  ? '#895061' :
+         d > 1000   ? '#FD8D3C' :
+         d > 500   ? '#FEB24C' :
+         d > 200  ? '#14A76C' :
                     '#FFEDA0';
 }
 
@@ -144,7 +144,7 @@ var legend = L.control({position: 'bottomleft'});
 legend.onAdd = function (map) {
 
   var div = L.DomUtil.create('div', 'info legend'),
-    grades = [0, 50, 200, 500, 1000, 2000, 5000,8000,10000],
+    grades =   [0, 200, 500, 1000, 3000, 5000, 9000, 15000, 18000],
     labels = [],
     from, to;
 
