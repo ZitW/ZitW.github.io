@@ -52,7 +52,7 @@ var map = new L.Map('map', {
 
   info.update = function (props) {
       this._div.innerHTML = '<h4>Alberta Covid Cases</h4>' +  (props ?
-           '<b> Location: </b>' + props.location + "<br>" + "<b>Deaths: </b>" + props.deaths + "<br>" + "<b>Recovered cases: </b>"+ props.recovered_cases + "<br>" + "<b>Active cases: </b>"+ props.active_cases + "<br>" + "<b>Total cases: </b>"+ props.total_cases
+           '<b> Location: </b>' + props.location + "<br>" + "<b>Deaths: </b>" + props.deaths + "<br>" + "<b>Active cases: </b>"+ props.active_cases + "<br>" + "<b>Total cases: </b>"+ props.total_cases
           : 'Hover over a place');
   };
     info.addTo(map);
@@ -115,15 +115,19 @@ function getColor(d) {
   //        d > 50   ? '#FEB24C' :
   //        d > 20   ? '#14A76C' :
   //                   '#FFEDA0';
-  return d > 18000 ? '#272727' :
-         d > 15000  ? '#747474' :
-         d > 9000 ? '#59253A' :
-         d > 5000  ? '#c8c3cc' :
-         d > 3000  ? '#895061' :
-         d > 1000   ? '#FD8D3C' :
-         d > 500   ? '#FEB24C' :
-         d > 200  ? '#14A76C' :
-                    '#FFEDA0';
+ 
+                    
+ return d > 20000 ? '#272727' :
+        d > 15000  ? '#747474' :
+        d > 10000  ? '#c8c3cc' :
+        d > 5000  ? '#59253A' :
+       d > 3000  ? '#895061' :
+        d > 1000   ? '#FD8D3C' :
+        d > 500   ? '#FEB24C' :
+       d > 200   ? '#14A76C' :
+                   '#FFEDA0';
+                    
+                   
 }
 
 
@@ -144,7 +148,7 @@ var legend = L.control({position: 'bottomleft'});
 legend.onAdd = function (map) {
 
   var div = L.DomUtil.create('div', 'info legend'),
-    grades =   [0, 200, 500, 1000, 3000, 5000, 9000, 15000, 18000],
+    grades =   [0, 200, 500, 1000, 3000, 5000, 10000, 15000, 20000],
     labels = [],
     from, to;
 
