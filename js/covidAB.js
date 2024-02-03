@@ -16,13 +16,13 @@ $.when(covidAB).done(function() {
 var map = new L.Map('map', {
     center: new L.latLng([54.532592, -114.214152]),
     zoom: 4,
-    layers: [tone, cities]
+    layers: [streets, cities]
     });
 
 
   var baseLayers = {
       "Streets": streets,
-      "Tone": tone
+      // "Tone": tone
     };
 
     var overlays = {
