@@ -21,7 +21,7 @@ var map = new L.Map('map', {
 
 
   var baseLayers = {
-      "Streets": streets,
+      "Streets": streets
       // "Tone": tone
     };
 
